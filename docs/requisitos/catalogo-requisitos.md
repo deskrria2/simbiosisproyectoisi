@@ -281,7 +281,8 @@ FR-017 se conserva para no perder el identificador histórico, pero su estado es
 | NFR-07 |NFR-Q (Eficiencia; Escalabilidad; Mantenibilidad) |La plataforma mantendrá los objetivos de capacidad y rendimiento definidos para la primera versión sin intervención manual del personal de la organización.| G | -  | Prueba de carga automatizada con 100 usuarios concurrentes y 10 operaciones/s durante 30 min; comprobar mediante registros de monitorización, ausencia de intervención manual. | - |
 |NFR-01|Disponibilidad|La plataforma alcanzara una disponibilidad mínima del 99,5% en cada mes natural|G| - |Mediante comprobaciones aleatorias cada cinco minutos|
 |NFR-02|NFR-Q(Compatibilidad) |La plataforma deberá funcionar correctamente en navegadores actuales de uso habitual; entre los ejemplos considerados están Chrome, Safari, Brave, DuckDuckGo, Opera y Edge. | G| - |-|-|
-|NFR-03| NFR-Q(Usabilidad)| La revisión manual comprobará, como mínimo, la navegación con teclado, el orden del foco, los textos alternativos, las etiquetas de los formularios, los mensajes de error, el contraste y el uso con lector de pantalla, e incluirá los recorridos de registro, inicio de sesión, búsqueda y consulta de recetas, publicación en el foro y consulta del perfil|G|-|-|-|
+
+
 
 Categorías y atributos: 
 1) Requisitos de calidad (NFR-Q): Rendimiento, Usabilidad, Seguridad, Fiabilidad, Disponibilidad, Modificabilidad, Portabilidad, Eficiencia, Escalabilidad, Verificabilidad / Testabilidad, Robustez, Seguridad funcional (safety), Integridad, Reusabilidad, Instalabilidad.
