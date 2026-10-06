@@ -99,7 +99,7 @@ En E1 basta con un respaldo breve del diagrama. La tabla permite ampliar la traz
 
 | Elemento del modelo | UR y FR de referencia | NFR pertinentes | Relación con los requisitos |
 | --- | --- | --- | --- |
-| UR-05 Gestionar perfil | UR-03;FR-019 | NFR-010 G | Permite modificar los datos personales y preferencias,pero incluye |
+| UR-05 Gestionar perfil | UR-03;FR-019 | NFR-010 G | Permite modificar los datos personales y preferencias, pero excluye alias y correo |
 
 Consulta el [catálogo canónico](../requisitos/catalogo-requisitos.md) y la [SRS](../requisitos/srs.md). Si falta una condición, indica que está pendiente de aclaración. No la presentes como un requisito confirmado.
 
