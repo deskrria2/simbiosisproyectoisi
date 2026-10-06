@@ -28,7 +28,8 @@ Registra los roles externos que participan en las funciones representadas. Un ac
 
 | Nombre del actor | Rol que representa |
 | --- | --- |
-| [Nombre] | [Describe el rol externo.] |
+| Usuario registrado | Persona que interactua con proyecto simbiosis |
+| Usuario | Persona con una cuenta en la plataforma|
 
 Mantén los mismos nombres en las tablas, los diagramas y las descripciones.
 
@@ -40,7 +41,7 @@ Registra los casos que aparecen en el modelo. Asigna a cada caso un identificado
 
 | Identificador | Nombre | Objetivo | Participantes |
 | --- | --- | --- | --- |
-| [UC-…] | [Nombre] | [Explica el objetivo.] | [Indica los actores que participan.] |
+| [UC-40] |gestionar perfil | Gestionar los datos personales y preferencias de la cuenta propia | Usuario Registrado |
 
 [Indica los actores que participan. Si procede, distingue el actor principal, que busca alcanzar el objetivo del caso de uso y normalmente inicia la interacción, de los actores de apoyo, que proporcionan servicios o información al sistema.]
 
@@ -98,7 +99,7 @@ En E1 basta con un respaldo breve del diagrama. La tabla permite ampliar la traz
 
 | Elemento del modelo | UR y FR de referencia | NFR pertinentes | Relación con los requisitos |
 | --- | --- | --- | --- |
-| [Caso, actor o relación] | [Identificadores] | [Identificadores, si procede] | [Explica qué respaldan o condicionan.] |
+| UR-05 Gestionar perfil | UR-03;FR-019 | NFR-010 G | Permite modificar los datos personales y preferencias,pero incluye |
 
 Consulta el [catálogo canónico](../requisitos/catalogo-requisitos.md) y la [SRS](../requisitos/srs.md). Si falta una condición, indica que está pendiente de aclaración. No la presentes como un requisito confirmado.
 
