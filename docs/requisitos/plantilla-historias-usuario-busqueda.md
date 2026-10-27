@@ -15,55 +15,54 @@
 
 ## Épica de búsqueda
 
-Como [rol], quiero [capacidad amplia], para [beneficio].
-
-**Estado:** descompuesta en US-01, US-02 y US-03. Conserva la necesidad conjunta.
-
+Como persona usuaria registrada, quiero buscar recetas mediante texto, ingredientes incluidos y exclusión de ingredientes, para localizar recetas que se ajusten a mis necesidades y preferencias
 ## Justificación de la división
 
-[Justificación de los resultados útiles que separa la división.]
+La búsqueda por texto, por ingredientes incluidos y por exclusión de ingredientes aportan valor de forma independiente porque permiten encontrar recetas mediante criterios distintos. Separarlas en historias facilita su implementación y validación manteniendo la funcionalidad global de búsqueda.
 
 ## US-01
 
-**Título:** [Capacidad]
+**Título:Buscar recetas mediante texto
 
-Como [rol], quiero [capacidad], para [beneficio].
+Como persona usuaria registrada, quiero buscar recetas mediante una palabra o frase, para localizar recetas relacionadas con un tema o preparación concreta
 
-**Fuentes:** UR-08; UC-21; [FR principal]; acta, [apartado pertinente].
+**Fuentes:** UR-08; UC-21; FR-085; acta, apartado 2.
 
 ### Criterios de aceptación
 
-- **CA-01.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-02.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-03.** Dado [situación], cuando [acción], entonces [resultado observable].
+- **CA-01** Dado que existen recetas publicadas que contienen la palabra «pollo» en su título o contenido, cuando el usuario introduce «pollo» en el campo de búsqueda, entonces el sistema muestra las recetas relacionadas con dicho término.
+
+- **CA-02** Dado que existen recetas publicadas relacionadas con la frase «tarta de queso», cuando el usuario introduce dicha frase en el campo de búsqueda, entonces el sistema muestra las recetas relacionadas con la frase introducida.
+
+- **CA-03** Dado que no existe ninguna receta asociada al término buscado, cuando el usuario ejecuta la búsqueda, entonces el sistema informa de que no se han encontrado resultados.
 
 ## US-02
 
-**Título:** [Capacidad]
+**Título:** Buscar recetas por ingredientes incluidos
 
-Como [rol], quiero [capacidad], para [beneficio].
+Como usuario, quiero buscar recetas por ingredientes seleccionados, para encontrar recetas que contengan ingredientes de los que dispongo o deseo consumir.
 
-**Fuentes:** UR-08; UC-21; [FR principal]; acta, [apartado pertinente].
+**Fuentes:** UR-08; UC-21; FR-086; acta, apartado 2.
 
 ### Criterios de aceptación
 
-- **CA-01.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-02.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-03.** Dado [situación], cuando [acción], entonces [resultado observable].
+- **CA-01.** Dado que existen recetas que contienen los ingredientes seleccionados, cuando el usuario selecciona uno o varios ingredientes e inicia la búsqueda, entonces el sistema muestra únicamente recetas que contienen todos los ingredientes seleccionados.
+- **CA-02.** Dado que una receta no contiene alguno de los ingredientes seleccionados, cuando el usuario realiza la búsqueda, entonces dicha receta no aparece en los resultados.
+- **CA-03.** Dado que no existen recetas que contengan todos los ingredientes seleccionados, cuando el usuario ejecuta la búsqueda, entonces el sistema informa de que no se han encontrado resultados.
 
 ## US-03
 
-**Título:** [Capacidad]
+**Título:** Excluir ingredientes de la búsqueda
 
-Como [rol], quiero [capacidad], para [beneficio].
+Como usuario, quiero excluir ingredientes de mis búsquedas, para evitar recetas que contengan ingredientes no deseados o incompatibles con mis necesidades.
 
-**Fuentes:** UR-08; UC-21; [FR principal]; acta, [apartado pertinente].
+**Fuentes:** UR-08; UC-21; FR-087 ; acta, apartado 2.
 
 ### Criterios de aceptación
 
-- **CA-01.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-02.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-03.** Dado [situación], cuando [acción], entonces [resultado observable].
+- **CA-01.** Dado que existen recetas que contienen cebolla y recetas que no la contienen, cuando el usuario excluye el ingrediente «cebolla», entonces el sistema no muestra recetas que contengan dicho ingrediente..
+- **CA-02.** Dado que existen recetas que cumplen los criterios de búsqueda y exclusión, cuando el usuario ejecuta la búsqueda, entonces el sistema muestra únicamente las recetas que no contienen ninguno de los ingredientes excluidos..
+- **CA-03.** Dado que la búsqueda no devuelve resultados debido a los criterios aplicados, cuando el usuario ejecuta la búsqueda, entonces el sistema informa de que no se han encontrado resultados y proporciona alternativas relacionadas o correcciones ortográficas cuando estén disponibles..
 
 ## Revisión INVEST
 
